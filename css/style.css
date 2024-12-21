@@ -1,0 +1,76 @@
+/* Custom CSS Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 76px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-outline-dark {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form Styling */
+.form-control {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section img {
+        margin-top: 2rem;
+    }
+}
